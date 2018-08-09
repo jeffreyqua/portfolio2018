@@ -2,26 +2,10 @@
 
 {% block content %}
   <div class="container">
-    <div class="header">
-      <img src="images/logo.png" class="header__logo" />
-      <div class="header__info">
-        <div class="header__info-title">Jeffrey Qua</div>
-        <div class="header__info-subtitle">Design + Development</div>
-      </div>
-    </div>
+    {% include "layouts/partials/header.njk" %}
 
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="./">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
-
+    {% import "layouts/macros/nav-macro.njk" as nav %}
+    {{nav.active('about')}}
 
     <section class="section__container">
       <h1 class="section__title">About</h1>

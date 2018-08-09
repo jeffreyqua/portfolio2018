@@ -5,13 +5,11 @@
     {% include "layouts/partials/header.njk" %}
 
     {% import "layouts/macros/nav-macro.njk" as nav %}
-    {{nav.active('home')}}
+    {{nav.active('contact')}}
 
-    <div class="jumbotron">
-      <h1 class="display-3">'Allo, 'Allo!</h1>
-      <p class="lead">Always a pleasure scaffolding your apps.</p>
-      <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-    </div>
+    <section class="section__container">
+      <h1 class="section__title">Contact</h1>
+    </section>
 
     {% include "layouts/partials/footer.njk" %}
   </div>
