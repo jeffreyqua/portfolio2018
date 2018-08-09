@@ -18,15 +18,7 @@ body {
   font-family: "Helvetica Neue";
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-/* Custom page header */
+// Header
 .header {
   display: flex;
   justify-content: center;
@@ -49,30 +41,50 @@ body {
   font-weight: 300;
   color: #666;
 }
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 3rem;
-}
 
-/* Custom page footer */
+// Footer
 .footer {
-  padding-top: 1.5rem;
-  color: #777;
-  border-top: .05rem solid #e5e5e5;
+  display: flex;
+  padding: 10px 0;
+  color: #333;
+  border-top: 1px solid #999;
+  font-size: 14px;
+  justify-content: space-between;
 }
-
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
+.footer__links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+.footer__link-item {
+  padding-right: 16px;
+}
+.footer__link {
+  color: #666;
+  &:hover {
+    color: $blue;
   }
 }
-.container-narrow > hr {
-  margin: 2rem 0;
+.footer__info {
+  color: #AAA;
 }
-
+.section__title {
+  font-size: 24px;
+  color: #000;
+}
+.section__container {
+  font-size: 14px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+}
+.section__subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
 .nav {
   justify-content: center;
   padding: 10px 0;
@@ -85,20 +97,13 @@ body {
 }
 .nav-link {
   color: $blue;
-  padding: 4px 10px;
+  padding: 0 10px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+// About
+.portfolio-links__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
