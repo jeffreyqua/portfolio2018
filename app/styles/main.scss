@@ -186,3 +186,50 @@ body {
 .projects-list__project-subtitle {
   font-size: 14px;
 }
+
+// Project page
+.project__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+.project__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+.project__info {
+  padding: 10px 0;
+  @include breakpoint(desktop) {
+    display: flex;
+  }
+}
+.project__info-module {
+  padding-right: 10px;
+}
+.project__info-title {
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+.project__info-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 12px;
+  color: #666;
+}
+.project__info-item {
+
+}
+.project__links {
+
+}
+// Project Block
+.project__block {
+
+}
+.project__block-title {
+  font-size: 16px;
+}
