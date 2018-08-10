@@ -7,11 +7,91 @@
     {% import "layouts/macros/nav-macro.njk" as nav %}
     {{nav.active('home')}}
 
-    <div class="jumbotron">
-      <h1 class="display-3">'Allo, 'Allo!</h1>
-      <p class="lead">Always a pleasure scaffolding your apps.</p>
-      <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-    </div>
+    <ul class="projects-list">
+      <li class="projects-list__item">
+        <a href="" class="projects-list__project-link">
+          <div class="projects-list__project">
+            <div class="projects-list__project-image-container">
+              <img src="/images/project-thumbnails/gb.jpg" alt="Glassbreakers" class="projects-list__project-image" />
+            </div>
+            <div class="projects-list__project-info">
+              <div class="projects-list__project-title">Glassbreakers</div>
+              <div class="projects-list__project-subtitle">Design System</div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="projects-list__item">
+        <a href="" class="projects-list__project-link">
+          <div class="projects-list__project">
+            <div class="projects-list__project-image-container">
+              <img src="/images/project-thumbnails/gb2.jpg" alt="Glassbreakers / Brand" class="projects-list__project-image" />
+            </div>
+            <div class="projects-list__project-info">
+              <div class="projects-list__project-title">Glassbreakers</div>
+              <div class="projects-list__project-subtitle">Brand / Visual</div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="projects-list__item">
+        <a href="" class="projects-list__project-link">
+          <div class="projects-list__project">
+            <div class="projects-list__project-image-container">
+              <img src="/images/project-thumbnails/centerpoint.jpg" alt="Centerpoint" class="projects-list__project-image" />
+            </div>
+            <div class="projects-list__project-info">
+              <div class="projects-list__project-title">Centerpoint</div>
+              <div class="projects-list__project-subtitle">Interactive Prototype</div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="projects-list__item">
+        <a href="" class="projects-list__project-link">
+          <div class="projects-list__project">
+            <div class="projects-list__project-image-container">
+              <img src="/images/project-thumbnails/m2g.jpg" alt="Made to Game" class="projects-list__project-image" />
+            </div>
+            <div class="projects-list__project-info">
+              <div class="projects-list__project-title">Made to Game</div>
+              <div class="projects-list__project-subtitle">Front-end Development</div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="projects-list__item">
+        <a href="" class="projects-list__project-link">
+          <div class="projects-list__project">
+            <div class="projects-list__project-image-container">
+              <img src="/images/project-thumbnails/lil.jpg" alt="Live In Levis" class="projects-list__project-image" />
+            </div>
+            <div class="projects-list__project-info">
+              <div class="projects-list__project-title">Live In Levis</div>
+              <div class="projects-list__project-subtitle">Front-end Development</div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="projects-list__item">
+        <a href="" class="projects-list__project-link">
+          <div class="projects-list__project">
+            <div class="projects-list__project-image-container">
+              <img src="/images/project-thumbnails/gb2.jpg" alt="Glassbreakers / Brand" class="projects-list__project-image" />
+            </div>
+            <div class="projects-list__project-info">
+              <div class="projects-list__project-title">Glassbreakers</div>
+              <div class="projects-list__project-subtitle">Brand / Visual</div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
 
     {% include "layouts/partials/footer.njk" %}
   </div>
