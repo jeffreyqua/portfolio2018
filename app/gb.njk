@@ -1,0 +1,16 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+  <div class="container">
+    {% include "layouts/partials/header.njk" %}
+
+    {% import "layouts/macros/nav-macro.njk" as nav %}
+    {{nav.active('')}}
+
+    <section class="section__container">
+      Project data
+    </section>
+
+    {% include "layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}
