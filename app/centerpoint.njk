@@ -1,0 +1,104 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+  <div class="container">
+    {% include "layouts/partials/header.njk" %}
+
+    {% import "layouts/macros/nav-macro.njk" as nav %}
+    {{nav.active('')}}
+
+    <section class="section__container">
+      <h1 class="project__title">Centerpoint</h1>
+      <h2 class="project__subtitle">Interactive Prototype</h2>
+      <section class="project__info">
+        <div class="project__info-module">
+          <div class="project__info-title">Expertise</div>
+          <ul class="project__info-list">
+            <li class="project__info-item">HTML/CSS/JS</li>
+            <li class="project__info-item">Socket.IO</li>
+            <li class="project__info-item">nodeJS</li>
+          </ul>
+        </div>
+        <div class="project__info-module">
+          <div class="project__info-title">Links</div>
+          <ul class="project__info-list">
+            <li class="project__info-item"><a href="#prototype">View prototype</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <figure class="project__image-container">
+        <iframe width="600" height="338" src="https://www.youtube.com/embed/pAloRCWNpHU?mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <figcaption class="project__image-caption">Prototype - Screen Interaction Test</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Objective</h3>
+        <p>Centerpoint is a conceptual digital interface that was designed to test the usability and viability of a digital media interface system paired with a touch-screen physical remote. The brief was to be able to create an interface prototype that mimics a television and remote controller’s physical interaction.</p>
+
+        <p>We were testing the complexity of navigating a personalized media interface along with testing swipe interaction.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/centerpoint1.jpg" class="project__image" alt="Modes Module - Peek" />
+        <figcaption class="project__image-caption">Modes Module - Peek</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/centerpoint2.jpg" class="project__image" alt="Modes Module" />
+        <figcaption class="project__image-caption">Modes Module</figcaption>
+      </figure>
+
+      <section class="project__block" id="prototype">
+        <h3 class="project__block-title">Live Prototype</h3>
+        <p>If you want to try the prototype out:<br/>
+          1) Open screen on desktop<br/>
+          Screen: https://akqa-directv-centerpoint.herokuapp.com/screen/UID</p>
+        <p>2) Open controller on smartphone browser (this won’t work without touch enabled)<br/>
+        Controller: https://akqa-directv-centerpoint.herokuapp.com/controller/UID</p>
+
+        <p>Password is <span class="project__block-password">dtv</span> / <span class="project__block-password">dtv</span</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/centerpoint-v1.gif" class="project__image" alt="Centerpoint image" />
+        <figcaption class="project__image-caption">Prototype Version 1</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Approach</h3>
+        <p>While the digital interface was one component of the concept, the other was the use of a physical remote for swipe-based gesture interaction. The challenge of creating a physical remote prototype resulted in opting for a smartphone as an analogous interface.</p>
+
+        <p>The app was created in node.js and using socket.io to listen for gesture interactions. The screen and controller communicate using websockets and the screen module’s state is updated based on commands from the controller module</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/centerpoint3.jpg" class="project__image" alt="Collections Module" />
+        <figcaption class="project__image-caption">Collections Module</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Process</h3>
+        <p>The prototype went through 3 phases over 12 weeks. The first iteration was an viability test of the smartphone/desktop communication over websockets. The second was building out the interactions in each of the subsections. The last phase was polishing up transition animations, adding in final visual assets including the sample “live” video component.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/centerpoint4.jpg" class="project__image" alt="Info Module" />
+        <figcaption class="project__image-caption">Info Module</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/centerpoint5.jpg" class="project__image" alt="Info Module - Episodes" />
+        <figcaption class="project__image-caption">Info Module - Episodes</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/centerpoint6.jpg" class="project__image" alt="Applications Module" />
+        <figcaption class="project__image-caption">Applications Module</figcaption>
+      </figure>
+
+    </section>
+
+    {% include "layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}

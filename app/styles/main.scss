@@ -235,4 +235,21 @@ body {
 }
 .project__block-title {
   font-size: 16px;
+  font-weight: 600;
+}
+.project__block-password {
+  color: $blue;
+  font-weight: 600;
+}
+.project__image-container {
+}
+.project__image {
+  width: 600px;
+}
+
+.project__image-caption {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
 }
