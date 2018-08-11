@@ -207,7 +207,10 @@ body {
   }
 }
 .project__info-module {
-  padding-right: 10px;
+  padding-right: 40px;
+  &:last-of-type {
+    padding: 0;
+  }
 }
 .project__info-title {
   font-size: 14px;
