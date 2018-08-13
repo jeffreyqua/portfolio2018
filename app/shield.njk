@@ -1,0 +1,86 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+  <div class="container">
+    {% include "layouts/partials/header.njk" %}
+
+    {% import "layouts/macros/nav-macro.njk" as nav %}
+    {{nav.active('')}}
+
+    <section class="section__container">
+      <h1 class="project__title">Nvidia SHIELD</h1>
+      <h2 class="project__subtitle">Front-end Development</h2>
+      <section class="project__info">
+        <div class="project__info-module">
+          <div class="project__info-title">Expertise</div>
+          <ul class="project__info-list">
+            <li class="project__info-item">HTML/CSS/JS</li>
+            <li class="project__info-item">Technical Project Management</li>
+            <li class="project__info-item">API Integration</li>
+          </ul>
+        </div>
+        <div class="project__info-module">
+          <div class="project__info-title">Links</div>
+          <ul class="project__info-list">
+            <li class="project__info-item"><a href="https://www.nvidia.com/en-us/shield/">View current site</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <figure class="project__image-container">
+        <iframe width="600" height="338" src="https://www.youtube.com/embed/fHyDS-64iR0?mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <figcaption class="project__image-caption">Animated Console Features</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Objective</h3>
+        <p>I was part of a team at AKQA that developed the initial version of the Nvidia SHIELD console marketing site that launched their new products in 2015 - Nvidia SHIELD console, Nvidia SHIELD Tablet, and Nvidia GRID.</p>
+
+        <p>There was </p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/shield2.jpg" class="project__image" alt="SHIELD Store" />
+        <figcaption class="project__image-caption">Store</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Approach</h3>
+        <p>The site had multiple challenges including interactive video, multiple API integrations (UGC content, shopping cart, game details), and preparation of site infrastructure for CMS templatization.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/shield3.jpg" class="project__image" alt="Console Details" />
+        <figcaption class="project__image-caption">Console Details</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Process</h3>
+        <p>The project was in a constant state of flux with re-designs and functional changes occurring on a weekly basis. The largest challenge for me was communication. With multiple teams and parties, my focus was the organization and coordination of teams to be able to function as a cohesive whole.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/shield4.jpg" class="project__image" alt="NVIDIA GRID" />
+        <figcaption class="project__image-caption">NVIDIA GRID</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/shield5.jpg" class="project__image" alt="SHIELD Support" />
+        <figcaption class="project__image-caption">Support knowledgebase</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/shield6.jpg" class="project__image" alt="SHIELD Community content" />
+        <figcaption class="project__image-caption">Community content</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/shield7.jpg" class="project__image" alt="Game details" />
+        <figcaption class="project__image-caption">Game details</figcaption>
+      </figure>
+
+    </section>
+
+    {% include "layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}
