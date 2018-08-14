@@ -1,0 +1,78 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+  <div class="container">
+    {% include "layouts/partials/header.njk" %}
+
+    {% import "layouts/macros/nav-macro.njk" as nav %}
+    {{nav.active('')}}
+
+    <section class="section__container">
+      <h1 class="project__title">Audi Mobile Site Concept</h1>
+      <h2 class="project__subtitle">Interactive Prototype</h2>
+      <section class="project__info">
+        <div class="project__info-module">
+          <div class="project__info-title">Expertise</div>
+          <ul class="project__info-list">
+            <li class="project__info-item">HTML/CSS/JS</li>
+            <li class="project__info-item">Passbook/iBeacon Integration</li>
+          </ul>
+        </div>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/audi1.jpg" class="project__image" alt="Mobile website" />
+        <figcaption class="project__image-caption">Mobile website</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Objective</h3>
+        <p>The mobile site prototype was one part of a larger presentation to display future concepts for brand marketing. The aim was to showcase new possibilities for the brand to interact with the public through technology-centric mediums.</p>
+
+        <p></p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/audi2.jpg" class="project__image" alt="Interactive Features - Lights" />
+        <figcaption class="project__image-caption">Interactive Features - Lights</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/audi3.jpg" class="project__image" alt="Interactive Features - Engine" />
+        <figcaption class="project__image-caption">Interactive Features - Engine</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Approach</h3>
+        <p>We were exploring all possible touchpoints of interaction on a website to engage a potential buyer. By using different types of interaction models, we hoped that the user would have a more in-depth understanding of the product.</p>
+
+        <p>The idea was to have an engaging end-to-end guided experience from the website all the way in to the dealership / retail location.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/audi4.jpg" class="project__image" alt="Build your own configuration" />
+        <figcaption class="project__image-caption">Build your own configuration</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/audi5.jpg" class="project__image" alt="Personalize and save" />
+        <figcaption class="project__image-caption">Personalize and save</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Process</h3>
+        <p>We incorporated multiple interaction models to explore the features of the product, including scrolling/swiping, interactive video, device orientation, and touch-to-zoom. Some were technically unrealistic (like having a video in the background), but this was an investigation of technological boundaries.</p>
+
+        <p>The other half of the experience was about guiding users who have created a custom configuration in the application, to be greeted at the retail store with their saved configuration ready to be viewed upon arrival at a specific physical location in a store, in our case a combination of the Passbook and iBeacons.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/audi6.jpg" class="project__image" alt="Passbook Card" />
+        <figcaption class="project__image-caption">Passbook Card</figcaption>
+      </figure>
+
+    </section>
+
+    {% include "layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}
