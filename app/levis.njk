@@ -1,0 +1,85 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+  <div class="container">
+    {% include "layouts/partials/header.njk" %}
+
+    {% import "layouts/macros/nav-macro.njk" as nav %}
+    {{nav.active('')}}
+
+    <section class="section__container">
+      <h1 class="project__title">Live In Levis</h1>
+      <h2 class="project__subtitle">Development / CMS Integration</h2>
+      <section class="project__info">
+        <div class="project__info-module">
+          <div class="project__info-title">Expertise</div>
+          <ul class="project__info-list">
+            <li class="project__info-item">HTML/CSS/JS/Angular</li>
+            <li class="project__info-item">CMS/API Integration</li>
+            <li class="project__info-item">Analytics Implementation</li>
+          </ul>
+        </div>
+        <div class="project__info-module">
+          <div class="project__info-title">Links</div>
+          <ul class="project__info-list">
+            <li class="project__info-item"><a href="https://thefwa.com/cases/the-live-in-levi-s-project">FWA</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/levis1.jpg" class="project__image" alt="Live In Levis" />
+        <figcaption class="project__image-caption">Live In Levis</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Objective</h3>
+        <p>Live In Levis was an experimental site that blended digital storytelling and e-commerce through use of video and an interactive interface. This website won the <a href="https://thefwa.com/cases/the-live-in-levi-s-project">FWA of the day</a> award on Sep 28, 2014.</p>
+
+        <p>The site used videos as the central point of the experience and through user interactions, dynamically updated the content based off both the user actions and the video’s current state.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/levis2.jpg" class="project__image" alt="Story Exploration" />
+        <figcaption class="project__image-caption">Story Exploration</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/levis3.jpg" class="project__image" alt="Real-time Video UI Overlay - Brand Details CTA" />
+        <figcaption class="project__image-caption">Real-time Video UI Overlay - Brand Details CTA</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Approach</h3>
+        <p>Using the user's current video state, the interface displayed contextually relevant artist/story details, branded product information, and also user-generated social media content.</p>
+
+        <p>The site had some organizational challenges with video and multi-locale support. We had a CMS integration in order to support 10 different  regions with support for multiple languages.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/levis4.jpg" class="project__image" alt="Brand Content Details" />
+        <figcaption class="project__image-caption">Brand Content Details</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/levis5.jpg" class="project__image" alt="Artist/Brand Story" />
+        <figcaption class="project__image-caption">Artist/Brand Story</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Process</h3>
+        <p> The site content was implemented through a third-party CMS to support multi-region/language content moderation. Stories were managed through Prismic, while user-generated content was managed through ThisMoment.</p>
+
+        <p>In order to determine effectiveness of the experimental interactivity, click analytics tracking was implemented for the data science team to review.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/levis6.jpg" class="project__image" alt="Prismic Integration" />
+        <figcaption class="project__image-caption">Prismic Integration</figcaption>
+      </figure>
+
+    </section>
+
+    {% include "layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}
