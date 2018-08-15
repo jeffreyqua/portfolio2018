@@ -111,14 +111,13 @@ body {
   color: #666;
   padding: 0 16px;
   font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.4px;
+  font-weight: 400;
   &:hover {
     color: $blue;
   }
   &.active {
-    color: #333;
-    font-weight: 400;
+    color: #000;
+    font-weight: 500;
   }
 }
 
