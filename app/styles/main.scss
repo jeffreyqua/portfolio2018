@@ -13,22 +13,21 @@ $blue: #29E;
 }
 
 body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
   font-family: "Helvetica Neue";
   background: #F6F6F6;
 }
 // Container
 .container {
-  max-width: 960px;
+  padding: 0;
+  max-width: 1200px;
   margin: 0 auto;
 }
-
 
 // Header
 .header {
   display: flex;
   justify-content: center;
+  padding-top: 24px;
 }
 .header__logo {
   width: 64px;
@@ -55,7 +54,7 @@ body {
   flex-direction: column;
   padding: 10px 0;
   color: #333;
-  border-top: 1px solid #999;
+  background: #FFF;
   margin: 20px auto 0;
   font-size: 14px;
   justify-content: space-between;
@@ -130,6 +129,9 @@ body {
 
 // Projects List
 .projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
