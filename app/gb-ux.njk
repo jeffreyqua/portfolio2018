@@ -1,0 +1,73 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+  <div class="container">
+    {% include "layouts/partials/header.njk" %}
+
+    {% import "layouts/macros/nav-macro.njk" as nav %}
+    {{nav.active('')}}
+
+    <section class="section__container">
+      <h1 class="project__title">Glassbreakers</h1>
+      <h2 class="project__subtitle">UX/UI</h2>
+      <section class="project__info">
+        <div class="project__info-module">
+          <div class="project__info-title">Expertise</div>
+          <ul class="project__info-list">
+            <li class="project__info-item">UX/UI Design</li>
+            <li class="project__info-item">Design/Tech Documentation</li>
+            <li class="project__info-item">Front-end Implementation</li>
+          </ul>
+        </div>
+        <div class="project__info-module">
+          <div class="project__info-title">Links</div>
+          <ul class="project__info-list">
+            <li class="project__info-item"><a href="https://www.glassbreakers.co/">Glassbreakers</a></li>
+            <li class="project__info-item"><a href="https://s3.amazonaws.com/jeffreyqua/gb_brand.pdf">Brand and tone guide</a></li>
+            <li class="project__info-item"><a href="https://www.glassbreakers.co/style_guide">Style guide</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-messaging.jpg" class="project__image" alt="GB Messaging" />
+        <figcaption class="project__image-caption">GB Messaging</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Objective</h3>
+        <p>The Glassbreakers product team needed to coordinate product and design decisions to the engineering team. Any feature and update required UI mockups and technical notes to outline intended functionality.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-profile.jpg" class="project__image" alt="GB Profile" />
+        <figcaption class="project__image-caption">GB Profile</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Approach</h3>
+        <p>In order to communicate design rationale on features, I had to create technical and design documentation to explain specific technical implementation and usability requirements.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-uxflow.jpg" class="project__image" alt="Sample UX Flowchart" />
+        <figcaption class="project__image-caption">Sample UX Flowchart</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Process</h3>
+        <p>All features were documented with screenshots of all possible states and documented in our company wiki.</p>
+
+        <p>Our team's TDD approach influenced our design methodology as well by incorporating view spec tests, and also testing email fidelity with Litmus.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-metrics.jpg" class="project__image" alt="GB Metrics" />
+        <figcaption class="project__image-caption">GB Metrics Dashboard</figcaption>
+      </figure>
+
+    </section>
+
+    {% include "layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}

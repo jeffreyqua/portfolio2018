@@ -1,0 +1,85 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+  <div class="container">
+    {% include "layouts/partials/header.njk" %}
+
+    {% import "layouts/macros/nav-macro.njk" as nav %}
+    {{nav.active('')}}
+
+    <section class="section__container">
+      <h1 class="project__title">Glassbreakers</h1>
+      <h2 class="project__subtitle">Visual / Brand</h2>
+      <section class="project__info">
+        <div class="project__info-module">
+          <div class="project__info-title">Expertise</div>
+          <ul class="project__info-list">
+            <li class="project__info-item">Visual Design</li>
+            <li class="project__info-item">Art Direction</li>
+            <li class="project__info-item">Brand Strategy</li>
+          </ul>
+        </div>
+        <div class="project__info-module">
+          <div class="project__info-title">Links</div>
+          <ul class="project__info-list">
+            <li class="project__info-item"><a href="https://www.glassbreakers.co/">Glassbreakers</a></li>
+            <li class="project__info-item"><a href="https://s3.amazonaws.com/jeffreyqua/gb_brand.pdf">Brand and tone guide</a></li>
+            <li class="project__info-item"><a href="https://www.glassbreakers.co/style_guide">Style guide</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-typography.jpg" class="project__image" alt="Typography" />
+        <figcaption class="project__image-caption">Typography</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Objective</h3>
+        <p>As the only designer on the team, it was my responsibility to create any graphic assets, icons, and any visual-related media. My challenge was to create a language to have a consistent brand voice and tone.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-colors.jpg" class="project__image" alt="Color Palette" />
+        <figcaption class="project__image-caption">Color Palette</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-2.jpg" class="project__image" alt="Symbol and Wordmark" />
+        <figcaption class="project__image-caption">Symbol and Wordmark</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Approach</h3>
+        <p>We needed to create consistency across our other channels especially for language in marketing, emails, and the product voice. One strategy we used for creating a more empathic voice for our platform was to create Hippy, a friendly hippo, as our support persona.</p>
+
+        <p>One project was a potential rebrand to help users differentiate the platform from the previous version and the existing social media associated with the name. This constituted a logo and name rebrand, a revised color scheme, and a change in the product language.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-3.jpg" class="project__image" alt="The Glassbreakers mascot, Hippy" />
+        <figcaption class="project__image-caption">The Glassbreakers mascot, Hippy</figcaption>
+      </figure>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-forest.jpg" class="project__image" alt="Forest rebrand" />
+        <figcaption class="project__image-caption">Forest rebrand</figcaption>
+      </figure>
+
+      <section class="project__block">
+        <h3 class="project__block-title">Process</h3>
+        <p>The <a href="https://www.glassbreakers.co/style_guide">style guide</a> was the first step to create a common language between design and engineering, but we also developed <a href="https://s3.amazonaws.com/jeffreyqua/gb_brand.pdf">brand and tone guidelines</a> to outline the product voice to our users.</p>
+
+        <p>On top of platform designs, I also worked on any presentational deliverables such as analytics reports and presentation decks.</p>
+      </section>
+
+      <figure class="project__image-container">
+        <img src="images/projects/gb-report.jpg" class="project__image" alt="GB Profile" />
+        <figcaption class="project__image-caption">Analytics report</figcaption>
+      </figure>
+
+    </section>
+
+    {% include "layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}
