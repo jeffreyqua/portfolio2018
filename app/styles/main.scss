@@ -10,6 +10,12 @@ $blue: #29E;
    @if $point == desktop {
      @media (min-width: 600px) { @content ; }
   }
+  @else if $point == home_max {
+    @media (min-width: 960px) { @content ; }
+  }
+  @else if $point == home_mid {
+    @media (min-width: 640px) { @content ; }
+  }
 }
 
 body {
@@ -129,14 +135,24 @@ body {
 }
 
 // Projects List
+.projects-list-container {
+  text-align: center;
+}
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  max-width: 320px;
+  @include breakpoint(home_mid) {
+    max-width: 640px;
+  }
+  @include breakpoint(home_max) {
+    max-width: 960px;
+  }
 }
 .projects-list__item {
   display: inline-block;
