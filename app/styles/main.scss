@@ -244,8 +244,8 @@ body {
 .project__info-item {
 
 }
-.project__links {
-
+.project__link {
+  color: $blue;
 }
 // Project Block
 .project__block {
@@ -271,4 +271,24 @@ body {
   font-size: 14px;
   text-align: center;
   padding-top: 10px;
+}
+// Project Nav
+.project-nav {
+  font-size: 14px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.project-nav__prev {
+  float: left;
+}
+
+.project-nav__next {
+  float: right;
+}
+.project-nav__link {
+  color: $blue;
 }
