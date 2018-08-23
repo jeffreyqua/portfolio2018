@@ -1,0 +1,14 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+  <div class="container">
+    {% include "layouts/partials/header.njk" %}
+
+    {% import "layouts/macros/nav-macro.njk" as nav %}
+    {{nav.active('')}}
+    <div class="error__container">
+      <h3 class="error__title">This page doesn't exist</h3>
+      <p>Return to <a href="/">projects</a>.</p>
+    </div>
+  </div>
+{% endblock %}

@@ -306,3 +306,15 @@ body {
 .project-nav__link {
   color: $blue;
 }
+
+
+// Error / 404
+.error__container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+.error__title {
+  font-size: 24px;
+}
